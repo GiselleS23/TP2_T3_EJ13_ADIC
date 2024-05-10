@@ -6,11 +6,12 @@ import java.util.Scanner;
 public class Main {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
-    String caracter;
+    char caracter; //debo ponerlo char para charAt
     int repeticiones;
     
     System.out.println("Ingresar un caracter: ");
-    caracter = scanner.next();
+    caracter = scanner.next().charAt(0); 
+    //charat solo tomara el 1er caracter que ponga el usuario
     System.out.println("Ingresar el numero de veces que se repetira: ");
     repeticiones = scanner.nextInt();
     
